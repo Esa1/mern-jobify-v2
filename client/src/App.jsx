@@ -1,8 +1,8 @@
 import React from "react";
-import { createBrowserRouter } from "react-router-dom";
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomeLayout from "./pages/HomeLayout";
 const router = createBrowserRouter([
-  { path: "/", element: <h1>home</h1> },
+  { path: "/", element: <HomeLayout /> },
   {
     path: "/about",
     element: (
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   },
 ]);
 const App = () => {
-  return <h1>Jobify App</h1>;
+  return <RouterProvider router={router} />;
 };
 
 export default App;
