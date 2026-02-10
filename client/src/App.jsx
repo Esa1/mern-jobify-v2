@@ -13,12 +13,12 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout />,
+    errorElement: <Error />,
     children: [
       { index: true, element: <Landing /> },
-      { path: "/", element: <HomeLayout /> },
-      { path: "/register", element: <Register /> },
-      { path: "/login", element: <Login /> },
-      { path: "/dashboard", element: <DashboardLayout /> },
+      { path: "register", element: <Register /> },
+      { path: "login", element: <Login /> },
+      { path: "dashboard", element: <DashboardLayout /> },
     ],
   },
 ]);
