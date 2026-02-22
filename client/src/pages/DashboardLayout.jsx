@@ -11,12 +11,15 @@ const DashboardLayout = () => {
   const [showSideBar, setShowSideBar] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
+  console.log("DashboardLayout");
+  console.log("showSideBar=");
+  console.log(showSideBar);
   const toggleDarkThem = () => {
     console.log("toggleDarkThem");
   };
 
   const toggleSideBar = () => {
-    console.log("in toggleSidebar function");
+    console.log("triggered toggleSidebar function");
     setShowSideBar(!showSideBar);
   };
 
